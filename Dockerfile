@@ -16,4 +16,6 @@ RUN apk add --no-cache ca-certificates
 
 COPY --from=builder /go/src/github.com/korrat/fuel-watch/fuel-watch .
 
+EXPOSE 9449
+
 CMD [ "./fuel-watch" ]
