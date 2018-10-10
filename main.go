@@ -13,5 +13,5 @@ func main() {
 
 	http.Handle("/metrics", promhttp.HandlerFor(reg, promhttp.HandlerOpts{}))
 
-	http.ListenAndServe("127.0.0.1:9449", nil)
+	http.ListenAndServe("0.0.0.0:9449", nil)
 }
